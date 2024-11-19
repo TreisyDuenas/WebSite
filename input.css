@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lacquer&family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Neucha&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-red-800 text-white font-lacquer tracking-wider;
+}
+
+section{
+    @apply py-20 md:py-28;
+
+}
+.nav-link{
+    @apply text-lg font-bold duration-300;
+}
+
+h1{
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+
+.nav-link:hover{
+    @apply text-yellow-500;
+}
+
+.font-Cobin {
+    font-size: 13px;
+}
+
+.font-Neucha {
+    font-size: 70px;
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+
