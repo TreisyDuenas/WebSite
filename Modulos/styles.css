@@ -1,0 +1,93 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1f38;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* el grandesito */
+  .container {
+    display: flex;
+    width: 100%;     /* Largo es width  */
+    max-width: 1800px;
+    height: 800px;
+    background-color: #2e3255;
+    border-radius: 15px;  /* borde redodeados */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Panel izquierdo */
+  .sidebar {
+    width: 30%;
+    background-color: #7c6dc0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .sidebar img {
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .sidebar p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  /* Panel derecho */
+  .main-content {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  /* Tarjetas */
+  .card {
+    background-color: #7c6dc0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #6b5bb5;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
