@@ -21,8 +21,42 @@ body {
     border-radius: 15px;  /* borde redodeados */
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
   }
-  
+
+  .containerB {
+    display: flex;
+    width: 100%;     /* Largo es width  */
+    max-width: 1800px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;  /* borde redodeados */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
+  } 
+
+.text-content h2 {
+    margin: 0; /* Quita márgenes extra del encabezado */
+}
+
+.text-content p {
+    margin: 0.2rem 0; /* Espaciado entre los párrafos */
+}
+
+  .conttenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+    
+}
+   
+  .text-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
   /* Panel izquierdo */
   .sidebar {
     width: 30%;
@@ -38,7 +72,15 @@ body {
     width: 200px;
     height: 200px;
     background-color: #DBD0EE;
-    border-radius: 20%;
+    border-radius: 50%;
+    margin-bottom: 70px;
+  }
+
+  .sidebarIndex img {
+    width: 200px;
+    height: 200px;
+    background-color: #DBD0EE;
+    border-radius: 50%;
     margin-bottom: 70px;
   }
   
@@ -49,11 +91,17 @@ body {
   }
   
   .sidebar p {
-    margin: 5px 0;
+    margin: 5% 0;
     font-size: 16px;
     font-weight: 300;
   }
-  
+  .subrayado { 
+    display: inline-block; /* Permite ajustar el ancho al texto */
+    width: 95%; /* Línea que abarca de extremo a extremo */
+    border-bottom: 1px solid rgb(255, 255, 255); /* Estilo de la línea */
+    text-align: center; 
+  }
+    
   /* Panel derecho */
   .main-content {
     width: 70%;
@@ -65,14 +113,23 @@ body {
   }
   
   /* Botones  */
-  .card {
-    background-color: #AFA4F2;
-    padding: 60px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, background-color 0.3s;
-    cursor: pointer;
-  }
+  .btn-link {
+    text-decoration: none; /* elimina lso decos*/
+    color: inherit;  
+}
+
+.card {
+  background: linear-gradient(135deg, #AFA4F2 50%, #65558F 50%); /*  diagonal */
+  padding: 60px;
+  width: 140px ;  
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(26, 26, 26, 0.2);
+  transition: transform 0.2s, background-color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
   
   .card:hover {
     transform: translateY(-5px);
@@ -81,27 +138,23 @@ body {
   
   .card h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    color: #ffffff
   }
   
   .card p {
     margin: 5px 0 0;
     font-size: 14px;
     font-weight: 300;
+    
   }
 
 
-  .triangulo-rectangulo {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 50px 50px 0; 
-    border-color: transparent #4d028a transparent transparent; 
-  }
-
+   
   .LineaBlanca {
     display: flex;
+    flex-direction: column;
   justify-content: center; /* centrar horizontalmente */
   align-items: center; /* centrar verticalmente */
   width: 100%; 
@@ -109,9 +162,10 @@ body {
   max-height: 100%;
   height: 150px; /* Altura de la franja */
   background-color: #fdfdfd; /* Color de fondo blanco */
+  color: #000000;
   overflow: hidden; /*sobreponer */
   margin: 50px 0 0 0; /* ubicacion altura de la fraja */
-    
+  font-size: 30px; /* tamaño de letra  */
   }
 
   .FondoBlanco {
@@ -121,9 +175,9 @@ body {
   width: 100%; 
   max-width: 100%; /*ocupar todo el largo al 100 %*/
   max-height: 100%;
-  height: 150px; /* Altura de la franja */
-  background-color: #fdfdfd; /* Color de fondo blanco */
-  overflow: hidden; /*sobreponer */
+  height: 85%; /* Altura de la franja */
+  background-color: #fdfdfd; /* Color de fondo   */
+  overflow: hidden;  
   margin: 50px 0 0 0; /* ubicacion altura de la fraja */
     
   }
